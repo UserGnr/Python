@@ -1,0 +1,1 @@
+# Este repositório destina-se ao aprendizado da linguagem Python

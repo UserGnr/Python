@@ -12,3 +12,6 @@ if ativo:
     print('Verdadeiro')
 else:
     print('Falso')
+
+print(ativo)
+print(not ativo)

@@ -2,7 +2,14 @@ Guia do conteúdo
 
 A numeração a seguir corresponde ao numero do arquivo ct_{x}
 
+Entrada e saida
 1 - print
 2 - input
-3 - Tipo numérico (int)
-4 - Tipo numérico (float e complexo)
+
+Operadores
+3 - Tipos de operadores: aritméticos, atribuição, comparação, lógicos, identidade, associação
+
+Tipos de dados
+4 - Tipo numérico (int)
+5 - Tipo numérico (float e complexo)
+6 5 - Booleano

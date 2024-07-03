@@ -1,36 +1,51 @@
 '''
-Tipo de ponto flutuante (float) e complexo
+Tipos numéricos (int)
 
-Float: tipo real, decimal
-Obs: o separador das casas decimais é o ponto(.) e não a vírgula(,)
-
+int -> inteiro
 '''
 
-# Tipo de dado float
-valor = 1.44
-print(f"Valor: {valor}, tipo: {type(valor)}")
+# Operações matemáticas
+# Soma (+)
+soma = 5 + 4
+print(f"Soma: {soma}, tipo: {type(soma)}")
 
-# Dupla atribuição
-valor1, valor2 = 1, 44.1  # É  permitido
-valor3 = 1, 44 # isso é uma tupla e não um tipo de dado float
-print(f"Valor1: {valor1}, tipo: {type(valor1)}")
-print(f"Valor2: {valor2}, tipo: {type(valor2)}")
-print(f"Valor3: {valor3}, tipo: {type(valor3)}")
+# Subtração (-)
+subtracao = 5 - 4
+print(f"Subtração: {subtracao}, tipo: {type(subtracao)}")
 
-# Converter flaot para int
-valor4 = 5.44
-valor5 = int(valor4)
-print(f"Valor 4: {valor4}, tipo: {type(valor4)}")
-print(f"Valor 5: {valor5}, tipo: {type(valor5)}")
-# Obs: perde a precisão ao converter float para int
+# Multiplicação (*)
+multiplicacao = 5 * 4
+print(f"Multiplicação: {multiplicacao}, tipo: {type(multiplicacao)}")
 
-'''
-Número complexo
+# Divisão (/)
+divisao = 5 / 4 # Float
+divisao_inteira = int(5 / 4)
+divisao_inteira1 = 5 // 4
 
-Basta atribuir o "j" no final do número
-'''
-valor6 = 5j
-print(f"Valor 6: {valor6}, tipo: {type(valor6)}")
+print(f"divisao: {divisao}, tipo: {type(divisao)}")
+print(f"divisao_inteira: {divisao_inteira}, tipo: {type(divisao_inteira)}")
+print(f"divisao_inteira1: {divisao_inteira1}, tipo: {type(divisao_inteira1)}")
 
-valor7 = valor5**2
-print(f"Valor 7: {valor7}, tipo: {type(valor7)}")
+# Exponenciação (**)
+exponenciacao = 5 ** 4
+print(f"Exponenciação: {exponenciacao}, tipo: {type(exponenciacao)}")
+
+# Resto (%)
+resto = 5 % 4
+print(f"Resto: {resto}, tipo: {type(resto)}")
+
+# Representação de números
+milhao = 1000000
+milhao1 = 1_000_000
+
+print(f"milhao: {milhao}, tipo: {type(milhao)}")
+print(f"milhao1: {milhao1}, tipo: {type(milhao1)}")
+
+# Simplificação de operações com a mesma variável
+num = 1
+num += num  # num = num + 1
+num -= num  # num = num - 1
+num *= 2    # num = num * 2
+num /=2 # num = num / 1
+num //=2    # num = num // 1
+num **=2    # num = num ** 1

@@ -14,3 +14,6 @@ Tipos de dados
 5 - Tipo numérico (float e complexo)
 6 - Booleano
 7 - String
+8 - Escopo de variáveis
+
+Lista de atividades

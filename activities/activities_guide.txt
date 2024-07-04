@@ -1,5 +1,7 @@
 Guia das atividades
 
+A numeração a seguir corresponde ao numero do arquivo referente as atividades atv_{x}
+
 Atividades referêntes ao conteúdo ct_1 ao ct_8
 1 - Faça um programa que leia um número inteiro e imprima-o.
 2 - Faça um programa que peça para o usuário digitar três valores inteiro e imprima a soma deles.

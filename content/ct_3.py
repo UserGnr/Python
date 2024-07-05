@@ -151,3 +151,12 @@ texto2 = "xi"
 
 print(texto2 in texto1)
 print(texto2 not in texto1)
+
+'''
+Observação:
+Exemploes de
+    Operadores unários (depende de apenas um valor):
+        not
+    Operadores binários (dependem de dois valores):
+        and, or, is
+'''

@@ -17,3 +17,5 @@ Tipos de dados
 8 - Escopo de variáveis
 
 Lista de atividades
+
+9 - Estruturas condicionais (if, elif e else)

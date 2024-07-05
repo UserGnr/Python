@@ -24,5 +24,7 @@ Lista de atividades
 
 Estruturas de repetição
 10 - for com range e enumerate
-11 -
-12 -
+11 - while
+12 - break
+
+Lista de atividades

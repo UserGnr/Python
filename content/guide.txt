@@ -21,3 +21,8 @@ Lista de atividades
 9 - Estruturas condicionais (if, elif e else)
 
 Lista de atividades
+
+Estruturas de repetição
+10 - for com range e enumerate
+11 -
+12 -

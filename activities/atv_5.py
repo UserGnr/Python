@@ -2,7 +2,7 @@
 
 import math
 
-numero: int = int(input('Digite um número: '))
+numero: int = int(input('Digite um número inteiro: '))
 
 if numero == 0:
     print('O número informado é zero')

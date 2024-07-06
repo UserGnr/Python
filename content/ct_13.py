@@ -2,9 +2,9 @@
 Listas (parte 1)
 
 Listas em Python funcionam como v etores/matrizes (arrays) em outras linguagens, 
-com a diferença das listas serem DINÂMICAS e também ser possível colocar QUALQUER tipo de dado
+com a diferença das listas serem DINÂMICAS e também ser possível colocar QUALQUER tipo de dado.
 
-- Dinâmico: não possuem tamanho fixo, pode ser criado a lista e ir adicionando elementos
+- Dinâmico: não possuem tamanho fixo, pode ser criado a lista e ir adicionando elementos. Ou seja, são mutáveis
 - Qualquer tipo de dado: não possuem tipo de dado fixo, ou seja, pode ser colocado qualquer tipo de dado
 
 As listas em Python são representadas por colchetes: []

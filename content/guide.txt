@@ -31,7 +31,7 @@ Lista de atividades
 
 13 - Listas (parte 1)
 14 - Listas (parte 2)
-14 - Tuplas
-15 - Dicionários
-16 - Mapas
-17 - Conjuntos
+15 - Tuplas
+16 - Dicionários
+17 - Mapas
+18 - Conjuntos

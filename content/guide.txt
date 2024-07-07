@@ -12,7 +12,7 @@ Operadores
 Tipos de dados
 4 - Tipo numérico (int)
 5 - Tipo numérico (float e complexo)
-6 - Booleano
+6 - Booleano e None
 7 - String
 8 - Escopo de variáveis
 

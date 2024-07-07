@@ -34,4 +34,4 @@ Lista de atividades
 15 - Tuplas
 16 - Dicionários ou mapas (parte 1)
 17 - Dicionários ou mapas (parte 2)
-18 - Conjuntos
+18 - Conjuntos (set)

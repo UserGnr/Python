@@ -26,6 +26,7 @@ None
 O tipo de dado None em Python representa o tipo sem tipo, poderia ser conhecido como tipo vazio, porém dizer que é um tipo sem tipo é mais apropriado
 
 O tipo None é SEMPRE com o 'N' em maiúsculo e as demais em minúsculo
+O tipo None é considerado como False
 
 None pode ser utilizado para inicializar uma variável, antes de receber um valor final 
 '''

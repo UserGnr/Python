@@ -20,10 +20,13 @@ Counter:
  - Tupla nomeada
  - São tuplas que tem o um nome e parâmetros
 
+ Deque
+ - O deque é uma lista de alta performance
+
 '''
 
 # Realizar o import
-from collections import Counter, defaultdict, OrderedDict, namedtuple
+from collections import Counter, defaultdict, OrderedDict, namedtuple, deque
 
 # Exemplo 1
 # Utilizando o Counter
@@ -114,4 +117,23 @@ print(f'Idade: {tupla_nome.idade}')
 print(f'Raça: {tupla_nome.raca}')
 print(f'Nome: {tupla_nome.nome}')
 
+print('\n\n')
 
+# Exemplo 5
+# Usando o deque
+print('Exemplo 5 - Usando o "deque')
+
+deque1_ex5 = deque('Um texto qualquer')
+
+print(f'Deque 1: {deque1_ex5} | Tipo: {type(deque1_ex5)}')
+
+# Adicionando elemento no deque
+deque1_ex5.append('y')  # Adiciona no final
+deque1_ex5.appendleft('x')  # Adiciona no começo
+
+print(f'Deque 1 (adicionando elemento à esquerda e direita): {deque1_ex5} | Tipo: {type(deque1_ex5)}')
+
+pop_valor = deque1_ex5.pop()    # Remove e retorna o último elemento
+popleft_valor = deque1_ex5.popleft()    # Remove e retorna o primeiro elemento
+
+print(f'Deque 1 (removendo elemento à esquerda e direita): {deque1_ex5} | Tipo: {type(deque1_ex5)}')

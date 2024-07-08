@@ -35,3 +35,4 @@ Lista de atividades
 16 - Dicionários ou mapas (parte 1)
 17 - Dicionários ou mapas (parte 2)
 18 - Conjuntos (set)
+19 - Collections

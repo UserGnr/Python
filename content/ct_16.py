@@ -12,6 +12,7 @@ Dicionários:
 - Podem ser misturado tipos de dados
 - Pode ser utilizado qualquer tipo de dado (int, float, string, boolean, lista, tupla, dicionário...)
 - Não pode ter 2 chaves repetidas 
+- A ordem dos elementos não é garantida
 '''
 
 # Exemplo 1

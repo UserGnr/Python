@@ -38,3 +38,10 @@ Lista de atividades
 19 - Collections (Counter, defaultdict, OrderedDict, namedtuple, deque)
 
 Lista de atividades
+
+20 - Funções (definindo e atribuindo uma função em uma variável)
+21 - Funções com "return"
+22 - Funções com parâmetros
+23 - Funções com parâmetros padrão
+24 - Variáveis locais e globais em funções e funções em funções
+25 - Documentando funções com docstrings (""" """)

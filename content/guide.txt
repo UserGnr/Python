@@ -45,3 +45,6 @@ Lista de atividades
 23 - Funções com parâmetros padrão
 24 - Variáveis locais e globais em funções e funções em funções
 25 - Documentando funções com docstrings (""" """)
+26 - *args
+27 - *kwargs
+28 - Ordem dos parâmetros de uma função

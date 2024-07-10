@@ -25,3 +25,9 @@ b) Armazene em uma variável inteira a soma entre os valores das posições A[0]
 c) Modifique a lista na posição 5, atribuindo a esta posição o valor 100.
 d) Mostre na tela cada valor da lista A, um em cada linha.
 12 - Faça um programa que leia 10 valores, armazene-os em uma lista e apresente quantos valores pares ele possui.
+
+Atividades referêntes ao conteúdo ct_20 ao ct_28
+13 - Crie um programa que tenha uma função que recebe um parâmetro inteiro e devolve o seu dobro.
+14 - Faça um programa que tenha uma função que recebe uma data no formato string exemplo “01/01/2024” e
+imprima ela por extenso como “1 de janeiro de 20204”.
+15 - Faça um programa que tenha uma função que receba uma lista de inteiros e retorne o maior valor

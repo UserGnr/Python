@@ -56,3 +56,5 @@ Lista de atividades
 31 - Listas aninhadas (nested lists)
 32 - Dictionary comprehension
 33 - Set comprehension
+
+34 - Lambdas

@@ -48,3 +48,11 @@ Lista de atividades
 26 - *args
 27 - *kwargs
 28 - Ordem dos parâmetros de uma função
+
+Lista de atividades
+
+29 - List comprehension (parte 1)
+30 - List comprehension (parte 2)
+31 - Listas aninhadas (nested lists)
+32 - Dictionary comprehension
+33 - Set comprehension

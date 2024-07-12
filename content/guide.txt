@@ -58,3 +58,13 @@ Lista de atividades
 33 - Set comprehension
 
 34 - Lambdas
+35 - Map
+36 - Filter
+37 - Reduce
+38 - Any e All
+39 - Generators
+40 - Sorted 
+41 - Min e Max
+42 - Reversed
+43 - Len, Abs, Sum e Round
+44 - Zip

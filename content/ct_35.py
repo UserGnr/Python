@@ -28,7 +28,7 @@ print('\n')
 
 # Criando uma lista com os valores
 lista_raios = [1, 2, 3 , 5.1, 0.3, 10, 44]
-print(f'Lista raios: {lista_raios}')
+print(f'Lista dos raios: {lista_raios}')
 
 print('\n')
 
@@ -53,14 +53,20 @@ print(f'Tipo do retorno do "map": {type(areas)}')
 print(f'Convertendo para uma lista (1° uso): {list(areas)}')  #Convertendo para uma lista o valor do map
 print(f'Convertendo para uma lista (2° uso): {list(areas)}')  # Retorna vazio pois com o map o valor é usado apenas uma vez
 
+print('\n')
+
 # Map com lambda
 print(f'Lambda com "map"')
-print(list(map(lambda raio: math.pi * (raio ** 2), lista_raios)))
+print(f'Usando o lambda: {list(map(lambda raio: math.pi * (raio ** 2), lista_raios))}')
 
+print('\n\n')
+
+# Exemplo 2 
 # Para fixar map
+print('Exemplo 2 - Para fixar o "map"')
 cidades = [('Berlim', 25), ('Cairo', 42), ('Buenos Aires', 16), ('Los Angeles', 32), ('Tokio', 21), ('Nova York', 29), ('Londes', 23)]
 
-print(cidades)
+print(f'Lista (uma lista com tuplas dentro): {cidades}')
 
 # Conversão para Fahrenheit: 
 # fahrenheit = 9/5 * celsius + 32

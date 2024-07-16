@@ -63,7 +63,7 @@ Lista de atividades
 37 - Reduce
 38 - Any e All
 39 - Generators
-40 - Sorted 
+40 - Sorted
 41 - Min e Max
 42 - Reversed
 43 - Len, Abs, Sum e Round

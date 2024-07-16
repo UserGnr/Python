@@ -16,7 +16,6 @@ print(f'Números: {conjunto1}')
 
 print(f'Conjunto | Odenando (maior para o menor): {sorted(conjunto1)}')
 
-
 lista1 = [6, 1, 8, 2]
 print(f'Lista | Ordenando (maior para o menor): {sorted(lista1)}')
 
@@ -37,7 +36,6 @@ print('\n\n')
 # Exemplo 3
 # Adicionando parâmetros ao sorted()
 print('Exemplo 3 - Adicionando parâmetros ao "sorted"')
-
 
 lista3 = [
     {"username": "samuel", "tweets": ["Eu adodo bolos", "Eu adoro pizzas"]},

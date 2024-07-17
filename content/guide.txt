@@ -68,3 +68,6 @@ Lista de atividades
 42 - Reversed
 43 - Len, Abs, Sum e Round
 44 - Zip
+
+45 - Erros mais comuns em Python
+46 - Raise

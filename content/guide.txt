@@ -73,4 +73,15 @@ Lista de atividades
 46 - Raise
 47 - Block try e except
 48 - Try, except, else e finally
+49 - Debugando com PDB
 
+50 - Modulos
+50_1 - Como importar
+50_2 - O módulo random
+50_3 - Módulos customizados e externos
+50_4 - Pacotes
+50_5 - Dunder name e dunder main
+
+Legenda (nome dos arquivos):
+cm_ - custom module
+pk_ - package

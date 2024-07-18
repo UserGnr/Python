@@ -1,0 +1,1 @@
+variavel_teste = 'testando'

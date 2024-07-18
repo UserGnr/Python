@@ -72,3 +72,4 @@ Lista de atividades
 45 - Erros mais comuns em Python
 46 - Raise
 47 - Block try e except
+48 - Try, except, else e finally

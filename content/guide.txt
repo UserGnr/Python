@@ -85,3 +85,10 @@ Lista de atividades
 Legenda (nome dos arquivos):
 cm_ - custom module
 pk_ - package
+
+51 - Entendendo Iterators e Iterables
+52 - Criando a própria versão de loop
+53 - Iterador customizado
+54 - Generator Functions
+55 - Teste de memória com generator function
+55 - Teste de velocidade com generator function

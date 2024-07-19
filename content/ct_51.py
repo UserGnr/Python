@@ -1,5 +1,4 @@
 '''
-
 Iterator é diferente de iterable
 
 Iterator (iterador):

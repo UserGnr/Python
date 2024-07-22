@@ -92,3 +92,5 @@ pk_ - package
 54 - Generator Functions
 55 - Teste de memória com generator function
 56 - Teste de velocidade com generator function
+
+57 - Higher Order Functions (Funções de Maior Grandeza)

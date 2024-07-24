@@ -94,3 +94,11 @@ pk_ - package
 56 - Teste de velocidade com generator function
 
 57 - Higher Order Functions (Funções de Maior Grandeza)
+58 - Decorators
+59 - Decorators com diferentes assinaturas
+60 - Preservando metadatas com wraps
+61 - Forçando tipos de dados com decoradores
+
+Programação orientada a objetos
+62 - Classes
+63 - Atributos

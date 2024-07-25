@@ -52,7 +52,7 @@ class Acesso:   # Classe
 maria = Acesso('Maria Fulana', 'mariafulana@email.com', 'Senha123')
 
 print('\n')
-# Acessando os atributos de isntância:
+# Acessando os atributos de instância:
 # Forma incorreta:
 print('Forma incorreta de acessar os atributos de instância')
 print(maria.nome_completo)
@@ -65,6 +65,9 @@ print('Forma correta de acessar os atributos de instância')
 maria.mostra_nome_completo()
 maria.mostra_email()
 maria.mostra_senha()
+Acesso.mostra_nome_completo(maria)
+Acesso.mostra_email(maria)
+Acesso.mostra_senha(maria)
 
 print('\n')
 # Forma correta ao acessar um atributo de classe:

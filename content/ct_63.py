@@ -1,5 +1,5 @@
 '''
-POO - Atributos de classes
+POO - Atributos
 
 Atributos: representam as características do objeto. Ou seja, pelos atributos é possível representar computacionalmente os estados de um objeto
 

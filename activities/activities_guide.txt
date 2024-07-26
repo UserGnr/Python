@@ -36,3 +36,17 @@ Atividades referêntes ao conteúdo ct_20 ao ct_28
 2 - Faça um programa que tenha uma função que recebe uma data no formato string exemplo “01/01/2024” e
 imprima ela por extenso como “1 de janeiro de 20204”.
 3 - Faça um programa que tenha uma função que receba uma lista de inteiros e retorne o maior valor
+
+Pasta: atv_6
+1 - Crie uma classe Pessoa, contendo nome, data de nascimento e email. Crie as propriedades getters e
+setters para os atributos e um método para imprimir os dados de uma pessoa.
+2 - Crie uma classe Agenda que pode armazenar contatos e seja possível realizar as seguintes operações:
+a) armazenar_contato(contato: Contato);
+b) remover_contato(contato: Contato);
+c) buscar_contato(nome: str); // Informa em que posição da agenda está o contato.
+d) imprimir_agenda(); // Imprime os dados de todos os contatos da agenda.
+e) imprimir_contato(indice: int); // Imprime os dados do contato informado pelo índice.
+3 - Crie as classes Televisao com atributo status, volume, canal e ControleRemoto com o atributo televisao, de forma que:
+a) Devemos poder ligar, desligar e gerenciar som e canais tanto pela televisão quanto via controle remoto;
+b) O controle de volume permite aumentar ou diminuir o volume de som em uma unidade de cada vez;
+c) O controle de canal permite aumentar ou diminuir o canal em uma unidade de cada vez mas também permitir que seja informado um número de canal para efetuar a troca;

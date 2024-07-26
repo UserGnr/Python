@@ -48,7 +48,6 @@ class Conta:
         conta_destino.__saldo += valor
 
 
-
 conta1 = Conta('Angelina', 150.00, 1500)
 conta1.extrato()
 

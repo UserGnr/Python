@@ -1,81 +1,97 @@
 Guia do conteúdo
 
-A numeração a seguir corresponde ao numero do arquivo ct_{x}
+Subtitle -----------------------------
+Folder:
+t_x
+t -> tópic
+x -> number
 
-Entrada e saida
+File:
+ct_x
+ct -> content
+x -> number
+--------------------------------------
+
+t1 - Entrada e saida
 1 - print
 2 - input
 
-Operadores
-3 - Tipos de operadores: aritméticos, atribuição, comparação, lógicos, identidade, associação
+t2 - Operadores
+1 - Tipos de operadores: aritméticos, atribuição, comparação, lógicos, identidade, associação
 
-Tipos de dados
-4 - Tipo numérico (int)
-5 - Tipo numérico (float e complexo)
-6 - Booleano e None
-7 - String
-8 - Escopo de variáveis
-
-Lista de atividades
-
-9 - Estruturas condicionais (if, elif e else)
+t3 - Tipos de dados
+1 - Tipo numérico (int)
+2 - Tipo numérico (float e complexo)
+3 - Booleano e None
+4 - String
+5 - Escopo de variáveis
 
 Lista de atividades
 
-Estruturas de repetição
-10 - for com range e enumerate
-11 - while
-12 - break
+t4 - Estruturas condicionais
+1 - Estruturas condicionais (if, elif e else)
 
 Lista de atividades
 
-13 - Listas (parte 1)
-14 - Listas (parte 2)
-15 - Tuplas
-16 - Dicionários ou mapas (parte 1)
-17 - Dicionários ou mapas (parte 2)
-18 - Conjuntos (set)
-19 - Collections (Counter, defaultdict, OrderedDict, namedtuple, deque)
+t5 - Estruturas de repetição
+1 - for com range e enumerate
+2 - while
+3 - break
 
 Lista de atividades
 
-20 - Funções (definindo e atribuindo uma função em uma variável)
-21 - Funções com "return"
-22 - Funções com parâmetros
-23 - Funções com parâmetros padrão
-24 - Variáveis locais e globais em funções e funções em funções
-25 - Documentando funções com docstrings (""" """)
-26 - *args
-27 - *kwargs
-28 - Ordem dos parâmetros de uma função
+t6 - Coleções
+1 - Listas (parte 1)
+2 - Listas (parte 2)
+3 - Tuplas
+4 - Dicionários ou mapas (parte 1)
+5 - Dicionários ou mapas (parte 2)
+6 - Conjuntos (set)
+7 - Collections (Counter, defaultdict, OrderedDict, namedtuple, deque)
 
 Lista de atividades
 
-29 - List comprehension (parte 1)
-30 - List comprehension (parte 2)
-31 - Listas aninhadas (nested lists)
-32 - Dictionary comprehension
-33 - Set comprehension
+t7 - Funções
+1 - Funções (definindo e atribuindo uma função em uma variável)
+2 - Funções com "return"
+3 - Funções com parâmetros
+4 - Funções com parâmetros padrão
+5 - Variáveis locais e globais em funções e funções em funções
+6 - Documentando funções com docstrings (""" """)
+7 - *args
+8 - *kwargs
+9 - Ordem dos parâmetros de uma função
 
-34 - Lambdas
-35 - Map
-36 - Filter
-37 - Reduce
-38 - Any e All
-39 - Generators
-40 - Sorted
-41 - Min e Max
-42 - Reversed
-43 - Len, Abs, Sum e Round
-44 - Zip
+Lista de atividades
 
-45 - Erros mais comuns em Python
-46 - Raise
-47 - Block try e except
-48 - Try, except, else e finally
-49 - Debugando com PDB
+t8 - Comprehension
+1 - List comprehension (parte 1)
+2 - List comprehension (parte 2)
+3 - Listas aninhadas (nested lists)
+4 - Dictionary comprehension
+5 - Set comprehension
 
-50 - Modulos
+t9 - Lambdas e funções integradas
+1 - Lambdas
+2 - Map
+3 - Filter
+4 - Reduce
+5 - Any e All
+6 - Generators
+7 - Sorted
+8 - Min e Max
+9 - Reversed
+10 - Len, Abs, Sum e Round
+11 - Zip
+
+t10 - Debugando e tratando erros
+1 - Erros mais comuns em Python
+2 - Raise
+3 - Block try e except
+4 - Try, except, else e finally
+5 - Debugando com PDB
+
+t11 - Modulos
 50_1 - Como importar
 50_2 - O módulo random
 50_3 - Módulos customizados e externos
@@ -86,24 +102,26 @@ Legenda (nome dos arquivos):
 cm_ - custom module
 pk_ - package
 
-51 - Entendendo Iterators e Iterables
-52 - Criando a própria versão de loop
-53 - Iterador customizado
-54 - Generator Functions
-55 - Teste de memória com generator function
-56 - Teste de velocidade com generator function
+t12 - Iterators e Iterables
+1 - Entendendo Iterators e Iterables
+2 - Criando a própria versão de loop
+3 - Iterador customizado
+4 - Generator Functions
+5 - Teste de memória com generator function
+6 - Teste de velocidade com generator function
 
-57 - Higher Order Functions (Funções de Maior Grandeza)
-58 - Decorators
-59 - Decorators com diferentes assinaturas
-60 - Preservando metadatas com wraps
-61 - Forçando tipos de dados com decoradores
+t13 - Decorators
+1 - Higher Order Functions (Funções de Maior Grandeza)
+2 - Decorators
+3 - Decorators com diferentes assinaturas
+4 - Preservando metadatas com wraps
+5 - Forçando tipos de dados com decoradores
 
-Programação orientada a objetos
-62 - Classes
-63 - Atributos
-64 - Métodos
-65 - Objetos
-66 - Abstração e encapsulamento
+t14 - Programação orientada a objetos
+1 - Classes
+2 - Atributos
+3 - Métodos
+4 - Objetos
+5 - Abstração e encapsulamento
 
 Lista de atividades

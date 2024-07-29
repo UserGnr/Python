@@ -25,19 +25,16 @@ t3 - Tipos de dados
 3 - Booleano e None
 4 - String
 5 - Escopo de variáveis
-
 Lista de atividades
 
 t4 - Estruturas condicionais
 1 - Estruturas condicionais (if, elif e else)
-
 Lista de atividades
 
 t5 - Estruturas de repetição
 1 - for com range e enumerate
 2 - while
 3 - break
-
 Lista de atividades
 
 t6 - Coleções
@@ -48,7 +45,6 @@ t6 - Coleções
 5 - Dicionários ou mapas (parte 2)
 6 - Conjuntos (set)
 7 - Collections (Counter, defaultdict, OrderedDict, namedtuple, deque)
-
 Lista de atividades
 
 t7 - Funções
@@ -61,7 +57,6 @@ t7 - Funções
 7 - *args
 8 - *kwargs
 9 - Ordem dos parâmetros de uma função
-
 Lista de atividades
 
 t8 - Comprehension

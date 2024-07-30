@@ -119,7 +119,8 @@ t14 - Programação orientada a objetos
 4 - Objetos
 5 - Abstração e encapsulamento
 Lista de atividades
-8 - Método super()
-6 - Herança
-7 - Propriedades (Properties) - property e setters
-8 - Herança múltipla
+6 - Método super()
+7 - Herança
+8 - Propriedades (properties) - property e setters
+9 - Herança múltipla
+10 - Method Resolution Order

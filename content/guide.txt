@@ -1,16 +1,8 @@
 Guia do conteúdo
 
-Subtitle -----------------------------
-Folder:
-t_x
-t -> tópic
-x -> number
-
-File:
-ct_x
-ct -> content
-x -> number
---------------------------------------
+Subtitle
+Folder: t_x         t -> tópic          x -> number
+File: ct_x        ct -> content       x -> number
 
 t1 - Entrada e saida
 1 - print
@@ -18,6 +10,8 @@ t1 - Entrada e saida
 
 t2 - Operadores
 1 - Tipos de operadores: aritméticos, atribuição, comparação, lógicos, identidade, associação
+2 - Operador walrus
+3 - Usando = no f-strings
 
 t3 - Tipos de dados
 1 - Tipo numérico (int)
@@ -25,7 +19,12 @@ t3 - Tipos de dados
 3 - Booleano e None
 4 - String
 5 - Escopo de variáveis
-Lista de atividades
+atv_1 - Lista de atividades
+6 - Type hinting
+7 - Checagem de dados com MyPy
+8 - Annotations
+9 - Tipos em comentários
+10 - Exemplo prático
 
 t4 - Estruturas condicionais
 1 - Estruturas condicionais (if, elif e else)
@@ -57,6 +56,7 @@ t7 - Funções
 7 - *args
 8 - *kwargs
 9 - Ordem dos parâmetros de uma função
+10 - Argumentos posicionais (/ e *)
 Lista de atividades
 
 t8 - Comprehension
@@ -118,5 +118,5 @@ t14 - Programação orientada a objetos
 3 - Métodos
 4 - Objetos
 5 - Abstração e encapsulamento
-
 Lista de atividades
+6 - Herança

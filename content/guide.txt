@@ -120,3 +120,4 @@ t14 - Programação orientada a objetos
 5 - Abstração e encapsulamento
 Lista de atividades
 6 - Herança
+7 - Propriedades (Properties)

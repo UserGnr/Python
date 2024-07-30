@@ -124,3 +124,5 @@ Lista de atividades
 8 - Propriedades (properties) - property e setters
 9 - Herança múltipla
 10 - Method Resolution Order
+11 - Poliformismo
+12 - Métodos mágicos

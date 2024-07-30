@@ -122,3 +122,4 @@ Lista de atividades
 8 - Método super()
 6 - Herança
 7 - Propriedades (Properties) - property e setters
+8 - Herança múltipla

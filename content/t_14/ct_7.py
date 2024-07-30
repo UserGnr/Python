@@ -1,141 +1,105 @@
 '''
-Propriedades (Properties) - property e setters
+Herança
 
-De certo modo, comaprando com outras linguagens de programação:
-- getter equivale ao property e setter ao setters
+- A ideia de herança é a de reaproveitar código e extender o código
+- Com a herança, a partir de uma classe existente, extende outra classe que passa a herdar atributos e métodos da classe herdada
+- Quando uma classe herda de outra classe, ela herda TODOS os atributos e métodos da classe herdada
 
-Em linguagens de programação como o Java, ao declararmos atributos privados nas classes, costumamos a criar métodos públicos para manipulação desses atributos. Esses métodos são conhecidos por getters e setters, onde os getters retornam o valor do atributo e os setters alteram o valor do mesmo
+Quando uma classe herda de outra classe, a classe herdada é conhecida por:
+    [Pessoa]
+    - Super Classe;
+    - Classe Mãe;
+    - Classe Pai;
+    - Classe Base;
+    - Classe Genérica;
+
+Quando uma classe herda de outra classe, ela é chamada:
+    [Cliente, Funcionario]
+    - Sub Classe;
+    - Classe Filha;
+    - Classe Específica;
+
 '''
 
-'''
 # Exemplo 1
-# Possível mas não usual em Python
+# Herança
+class Pessoa:
 
-class Conta:
+    def __init__(self, nome, sobrenome, cpf):
+        self.__nome = nome
+        self.__sobrenome = sobrenome
+        self.__cpf = cpf
 
-
-    contador = 0
-
-    def __init__(self, titular, saldo, limite):
-        self.__numero = Conta.contador + 1
-        self.__titular = titular
-        self.__saldo = saldo
-        self.__limite = limite
-        Conta.contador += 1
-
-    def extrato(self):
-        return f'Saldo de {self.__saldo} do cliente {self.__titular}'
-
-    def depositar(self, valor):
-        self.__saldo += valor
-
-    def sacar(self, valor):
-        self.__saldo -= valor
-
-    def transferir(self, valor, destino):
-        self.__saldo -= valor
-        destino.__saldo += valor
-
-    def get_numero(self):
-        return self.__numero
-
-    def get_titular(self):
-        return self.__titular
-
-    def set_titular(self, titular):
-        self.__titular = titular
-
-    def get_saldo(self):
-        return self.__saldo
-
-    def get_limite(self):
-        return self.__limite
-
-    def set_limite(self, limite):
-        self.__limite = limite
+    def nome_completo(self):
+        return f'{self.__nome} {self.__sobrenome}'
 
 
-conta1 = Conta('Felicity', 3000, 5000)
-conta2 = Conta('Angelina', 2000, 4000)
+class Cliente(Pessoa):
+    # Cliente herda de Pessoa
 
-print(conta1.extrato())
-print(conta2.extrato())
-
-soma = conta1.get_saldo() + conta2.get_saldo()
-print(f'A soma do saldo das contas é {soma}')
+    def __init__(self, nome, sobrenome, cpf, renda):
+        Pessoa.__init__(self, nome, sobrenome, cpf)  # Forma não comum de acessar dados da super classe
+        self.__renda = renda
 
 
-print(conta1.__dict__)
-conta1.set_limite(999999)
-print(conta1.__dict__)
+class Funcionario(Pessoa):
+    #  Funcionario herda de Pessoa
+
+    def __init__(self, nome, sobrenome, cpf, matricula):
+        super().__init__(nome, sobrenome, cpf)  # Forma comum de acessar dados da super classe
+        self.__matricula = matricula
+
+
+cliente1 = Cliente('Angelina', 'Jolie', '123.456.789-00', 5000)
+funcionario1 = Funcionario('Felicity', 'Jones', '987.654.321-11', 1234)
+
+print(cliente1.nome_completo())
+print(funcionario1.nome_completo())
+
+print(cliente1.__dict__)
+
+print(funcionario1.__dict__)
+
 '''
-
 # Exemplo 2
-# Recomendado
+# Sobrescrita de Métodos (Overriding)
+# Sobrescrita de método, ocorre quando reescrevemos/reimplementamos um método presente na super classe em classes filhas
+
+class Pessoa:
+
+    def __init__(self, nome, sobrenome, cpf):
+        self.__nome = nome
+        self.__sobrenome = sobrenome
+        self.__cpf = cpf
+
+    def nome_completo(self):
+        return f'{self.__nome} {self.__sobrenome}'
 
 
-class Conta:
+class Cliente(Pessoa):
+    """Cliente herda de Pessoa"""
 
-    contador = 0
-
-    def __init__(self, titular, saldo, limite):
-        self.__numero = Conta.contador + 1
-        self.__titular = titular
-        self.__saldo = saldo
-        self.__limite = limite
-        Conta.contador += 1
-
-    @property   # Decorador, usado na estrutura a seguir para ver o valor
-    def numero(self):
-        return self.__numero
-
-    @property
-    def titular(self):
-        return self.__titular
-
-    @property
-    def saldo(self):
-        return self.__saldo
-
-    @property
-    def limite(self):
-        return self.__limite
-
-    @limite.setter  # Decorador, usado na estrutura a seguir alterar o valor
-    def limite(self, novo_limite):
-        self.__limite = novo_limite
-
-    def extrato(self):
-        return f'Saldo de {self.__saldo} do cliente {self.__titular}'
-
-    def depositar(self, valor):
-        self.__saldo += valor
-
-    def sacar(self, valor):
-        self.__saldo -= valor
-
-    def transferir(self, valor, destino):
-        self.__saldo -= valor
-        destino.__saldo += valor
-
-    @property
-    def valor_total(self):
-        return self.__saldo + self.__limite
+    def __init__(self, nome, sobrenome, cpf, renda):
+        Pessoa.__init__(self, nome, sobrenome, cpf)  # Forma não comum de acessar dados da super classe
+        self.__renda = renda
 
 
-conta1 = Conta('Felicity', 3000, 5000)
-conta2 = Conta('Angelina', 2000, 4000)
+class Funcionario(Pessoa):
+    """Funcionario herda de Pessoa"""
 
-print(conta1.extrato())
-print(conta2.extrato())
+    def __init__(self, nome, sobrenome, cpf, matricula):
+        super().__init__(nome, sobrenome, cpf)  # Forma comum de acessar dados da super classe
+        self.__matricula = matricula
 
-soma = conta1.saldo + conta2.saldo
-print(f'A soma do saldo das contas é {soma}')
+    def nome_completo(self):
+        print(super().nome_completo())
+        print(self._Pessoa__cpf)
+        return f'Funcionário: {self.__matricula} Nome: {self._Pessoa__nome}'
 
-print(conta1.__dict__)
-conta1.limite = 76543
-print(conta1.__dict__)
-print(conta1.limite)
 
-print(conta1.valor_total)
-print(conta2.valor_total)
+cliente1 = Cliente('Angelina', 'Jolie', '123.456.789-00', 5000)
+funcionario1 = Funcionario('Felicity', 'Jones', '987.654.321-11', 1234)
+
+print(cliente1.nome_completo())
+print(funcionario1.nome_completo())
+'''

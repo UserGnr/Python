@@ -118,7 +118,7 @@ t14 - Programação orientada a objetos
 3 - Métodos
 4 - Objetos
 5 - Abstração e encapsulamento
-Lista de atividades
+Lista de atividades 1
 6 - Método super()
 7 - Herança
 8 - Propriedades (properties) - property e setters
@@ -126,3 +126,6 @@ Lista de atividades
 10 - Method Resolution Order
 11 - Poliformismo
 12 - Métodos mágicos
+Lista de atividades 2
+
+- Leitura e escrita em arquivos

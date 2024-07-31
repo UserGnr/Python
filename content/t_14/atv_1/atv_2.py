@@ -7,41 +7,44 @@ d) imprimir_agenda(); // Imprime os dados de todos os contatos da agenda.
 e) imprimir_contato(indice: int); // Imprime os dados do contato informado pelo índice.
 '''
 
-from atv_1 import Pessoa, date
+from datetime import date
+
+from atv_1 import Pessoa
 
 
 class Agenda:
 
     def __init__(self):
-        self.__contatos: list[Pessoa] = []
+        self.__agenda: list[Pessoa] = []
 
     @property
-    def contatos(self) -> list[Pessoa]:
-        return self.__contatos
+    def agenda(self) -> list[Pessoa]:
+        return self.__agenda
 
-    def armazenar_contato(self, contato: Pessoa) -> None:
-        self.contatos.append(contato)
+    def armazenar_contato(self, contato: Pessoa):
+        self.agenda.append(contato)
 
-    def remover_contato(self, contato: Pessoa) -> None:
-        self.contatos.remove(contato)
+    def remover_contato(self, contato: Pessoa):
+        self.agenda.remove(contato)
 
-    def buscar_contato(self, nome: str) -> None:
-        for indice, contato in enumerate(self.contatos):
+    def buscar_contato(self, nome: str) -> int:
+        for indice, contato in enumerate(self.agenda):
             if contato.nome == nome:
-                print(f'O contato {nome} esta na posicao {indice}')
+                return indice
+        return -1
 
-    def imprimir_agenda(self) -> None:
-        for contato in self.contatos:
+    def imprimir_agenda(self):
+        for contato in self.agenda:
             contato.imprimir()
 
-    def imprimir_contato(self, indice: int) -> None:
-        self.contatos[indice].imprimir()
+    def imprimir_contato(self, indice: int):
+        self.agenda[indice].imprimir()
 
 
 if __name__ == '__main__':
-    contato1: Pessoa = Pessoa('Felicity Jones', date(1987, 7, 22), 'felicity@gmail.com')
-    contato2: Pessoa = Pessoa('Angelina Jolie', date(1984, 3, 6), 'angelina@gmail.com')
-    contato3: Pessoa = Pessoa('Ray Sychev', date(1981, 8, 18), 'ray@gmail.com')
+    contato1: Pessoa = Pessoa("Felicity Jones", date(1987, 7, 22), "felicity@gmail.com")
+    contato2: Pessoa = Pessoa("Angelina Jolie", date(1984, 3, 6), "angelina@gmail.com")
+    contato3: Pessoa = Pessoa("Ray Sychev", date(1981, 8, 18), "ray@gmail.com")
 
     agenda: Agenda = Agenda()
 
@@ -51,7 +54,7 @@ if __name__ == '__main__':
 
     agenda.imprimir_agenda()
 
-    agenda.buscar_contato('Ray Sychev')
+    print(agenda.buscar_contato("Ray Sychev"))
 
     agenda.imprimir_contato(2)
 

@@ -1,0 +1,44 @@
+Fonte: Chat GPT
+
+1 - Exercícios Básicos
+1.1 - Escreva um programa que imprima "Hello, World!".
+
+2 - Operações Básicas
+2.1 - Crie um programa que leia dois números do usuário e exiba a soma, subtração, multiplicação e divisão deles.
+2.2 - Escreva um programa que peça um número ao usuário e informe se o número é ímpar ou par.
+2.3 - Escreva um programa que leia três números e determine qual deles é o maior.
+2.4 - Crie um programa que leia um número inteiro positivo e exiba o seu fatorial.
+
+3 - Estruturas de Dados
+3.1 - Lista de Números Pares
+3.2 - Crie uma lista contendo os números de 1 a 20 e imprima apenas os números pares.
+3.3 -Escreva uma função que receba uma lista de números e retorne a soma de todos os elementos.
+3.4 - Escreva uma função que verifique se uma palavra é um palíndromo.
+3.5 - Escreva um programa que conte a ocorrência de cada caractere em uma string fornecida pelo usuário.
+
+4 - Funções
+4.1 - Escreva funções para converter temperaturas entre Celsius, Fahrenheit e Kelvin.
+4.2 - Implemente uma calculadora simples usando funções para as operações básicas (soma, subtração, multiplicação e divisão).
+4.3 - Escreva uma função recursiva para calcular o n-ésimo número da sequência de Fibonacci.
+
+5 - Classes e Objetos
+5.1 - Crie uma classe Pessoa com atributos para nome, idade e uma função para mostrar essas informações.
+5.2 - Crie uma classe Retangulo que tenha métodos para calcular a área e o perímetro de um retângulo.
+5.3 - Crie uma classe ContaBancaria com métodos para depósito, saque e consulta de saldo.
+
+6 - Manipulação de Arquivos
+6.1 - Leitura de Arquivo: Escreva um programa que leia o conteúdo de um arquivo texto e exiba na tela.
+6.2 - Escrita em Arquivo: Crie um programa que peça ao usuário para inserir várias linhas de texto e salve essas linhas em um arquivo.
+
+7 - Bibliotecas e Módulos
+
+7.1 - Utilize a biblioteca math para calcular a raiz quadrada, seno e cosseno de um número fornecido pelo usuário.
+7.2 - Escreva um programa que leia um arquivo JSON, modifique algum valor e salve de volta no arquivo.
+7.3 - Use a biblioteca matplotlib para criar um gráfico de barras com dados fornecidos pelo usuário.
+
+8 -Tópicos Avançados
+8.1 - Escreva um gerador que retorne números da sequência de Fibonacci.
+8.2 - Crie um decorador que registre o tempo de execução de uma função.
+8.3 - Use a biblioteca pandas para carregar um arquivo CSV, realizar algumas análises simples (como calcular médias) e exibir os resultados.
+8.4 - Utilize a biblioteca BeautifulSoup para fazer scraping de uma página web e extrair algumas informações específicas.
+8.5 - Use a biblioteca requests para fazer uma requisição a uma API pública (como a API do GitHub) e exibir alguns dados sobre um repositório.

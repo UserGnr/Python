@@ -1,61 +1,38 @@
 '''
-1 - Crie a classe Veiculo, contendo marca e modelo. Crie as propriedades getters e setters para os atributos e
-um método para imprimir os dados de um veículo. Crie também o construtor da classe.
+1 - Crie uma classe chamada “Círculo” que possua um atributo para armazenar o raio e métodos para calcular a área e o perímetro do círculo.
 '''
 
-class Veiculo():
+class Circulo():
+
+    pi: float = 3.14159265359
 
 
-    def __init__(self, marca: str, modelo: str) -> None:
-        self.__marca: str = marca
-        self.__modelo: str = modelo
+    def __init__(self, raio: float) -> None:
+        self.__raio = raio
     
 
     @property
-    def marca(self) -> str:
-        return self.__marca
+    def raio(self) -> float:
+        return self.__raio
     
 
-    @marca.setter
-    def marca(self, marca: str) -> None:
-        self.__marca = marca
+    @raio.setter
+    def raio(self, raio: float) -> None:
+        self.__raio = raio
     
 
-    @property
-    def modelo(self) -> str:
-        return self.__modelo
+    def area(self) -> float:
+        return Circulo.pi * self.__raio ** 2
     
 
-    @modelo.setter
-    def modelo(self, modelo: str) -> None:
-        self.__modelo = modelo
-
-
-    def imprimir(self) -> None:
-        print(f'Marca: {self.__marca} Modelo: {self.__modelo}')
+    def perimetro(self) -> float:
+        return 2 * Circulo.pi * self.__raio
 
 
 if __name__ == '__main__':
-    
-    carro1: Veiculo = Veiculo(marca= 'Fiat', modelo= 'Uno')
-    carro2: Veiculo = Veiculo(marca= 'Fiat', modelo= 'Argo')
-    carro3: Veiculo = Veiculo(marca= 'Chery', modelo= 'Tiggo 7')
-
-    print(carro1.marca)
-    print(carro1.modelo)
-
-    carro1.marca = 'Volkswagen'
-    carro1.modelo = 'Gol'
-
-    print(carro1.marca)
-    print(carro1.modelo)
-
-    print(carro2.marca)
-    print(carro2.modelo)
-
-    print(carro3.marca)
-    print(carro3.modelo)
-
-    carro1.imprimir()
-    carro2.imprimir()
-    carro3.imprimir()
+    circulo1: Circulo = Circulo(5)
+    print(f'{circulo1.raio = }')
+    circulo1.raio = 6
+    print(f'{circulo1.raio = }')
+    print(f'{circulo1.area() = :.2f}')
+    print(f'{circulo1.perimetro() = :.2f}')

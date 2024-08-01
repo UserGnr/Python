@@ -1,61 +1,61 @@
 '''
-1 - Crie uma classe Pessoa, contendo nome, data de nascimento e email. Crie as propriedades getters e setters para os atributos e um método para imprimir os dados de uma pessoa.
+1 - Crie a classe Veiculo, contendo marca e modelo. Crie as propriedades getters e setters para os atributos e
+um método para imprimir os dados de um veículo. Crie também o construtor da classe.
 '''
-from datetime import date
+
+class Veiculo():
 
 
-class Pessoa():
-
-    def __init__(self, nome, data_nascimento, email) -> None:
-        self.__nome: str = nome
-        self.__data_nascimento: date = data_nascimento
-        self.__email: str = email
+    def __init__(self, marca: str, modelo: str) -> None:
+        self.__marca: str = marca
+        self.__modelo: str = modelo
     
-    @property
-    def nome(self) -> str:
-        return self.__nome  + "AAA"
-    
-    @nome.setter
-    def nome(self, nome: str) -> None:
-        self.__nome = nome + "AAA"
 
     @property
-    def data_nascimento(self) -> str:
-        return self.__data_nascimento
+    def marca(self) -> str:
+        return self.__marca
     
-    @data_nascimento.setter
-    def data_nascimento(self, data_nascimento: str) -> None:
-        self.__data_nascimento: date = data_nascimento
+
+    @marca.setter
+    def marca(self, marca: str) -> None:
+        self.__marca = marca
+    
 
     @property
-    def email(self) -> str:
-        return self.__email
+    def modelo(self) -> str:
+        return self.__modelo
     
-    @email.setter
-    def email(self, email) -> None:
-        self.__email = email
-    
+
+    @modelo.setter
+    def modelo(self, modelo: str) -> None:
+        self.__modelo = modelo
+
+
     def imprimir(self) -> None:
-        print(f'Nome: {self.__nome}')
-        print(f'Nascimento: {self.__data_nascimento.strftime('%d/%m/%y')}')
-        print(f'Email: {self.__email}')
+        print(f'Marca: {self.__marca} Modelo: {self.__modelo}')
 
 
 if __name__ == '__main__':
-    ana: Pessoa = Pessoa('Ana', date(year=2024, month=1, day=1), 'ana@gmail.com')
+    
+    carro1: Veiculo = Veiculo(marca= 'Fiat', modelo= 'Uno')
+    carro2: Veiculo = Veiculo(marca= 'Fiat', modelo= 'Argo')
+    carro3: Veiculo = Veiculo(marca= 'Chery', modelo= 'Tiggo 7')
 
-    print(ana.__dict__)
-    ana.imprimir()
+    print(carro1.marca)
+    print(carro1.modelo)
 
-    # Acessando os get
-    print(ana.nome)
-    print(ana.data_nascimento)
-    print(ana.email)
-    # Usando os set
-    ana.nome = 'Aninha'
-    ana.data_nascimento = '02/01/2024'
-    ana.email = 'aninha@gmail.com'
-    # Acessando os get
-    print(ana.nome)
-    print(ana.data_nascimento)
-    print(ana.email)
+    carro1.marca = 'Volkswagen'
+    carro1.modelo = 'Gol'
+
+    print(carro1.marca)
+    print(carro1.modelo)
+
+    print(carro2.marca)
+    print(carro2.modelo)
+
+    print(carro3.marca)
+    print(carro3.modelo)
+
+    carro1.imprimir()
+    carro2.imprimir()
+    carro3.imprimir()

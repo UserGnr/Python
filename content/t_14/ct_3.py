@@ -28,8 +28,8 @@ São usados quando não faz uso dos atributos de instâncias, faz uso dos atribu
 
 # Método de classe
 # @classmethod
-# O método de classe é usado quando o método usa como
-#  Não tem acesso a instância do objeto, tem acesso a classe
+# O método de classe é usado quando o método usa os atributos de classes
+# Não tem acesso a instância do objeto, tem acesso a classe
 
 # Métodos estáticos
 # @staticmethod

@@ -124,14 +124,14 @@ class Produto2:
     imposto = 0.05
 
     def __init__(self, nome, descricao, valor):
-        self.id = Produto.contador + 1
+        self.id = Produto2.contador + 1
         self.nome = nome
         self.descricao = descricao
-        self.valor = valor + valor * Produto.imposto
-        Produto.contador = self.id
+        self.valor = valor + valor * Produto2.imposto
+        Produto2.contador = self.id
 
-p1_ex4 = Produto('Banana', 'Fruta', 5)
-p2_ex4 = Produto('Maça', 'Fruta', 3.99)
+p1_ex4 = Produto2('Banana', 'Fruta', 5)
+p2_ex4 = Produto2('Maça', 'Fruta', 3.99)
 
 print(p1_ex4.__dict__)
 print(p2_ex4.__dict__)

@@ -1,41 +1,56 @@
 '''
-2 - Crie a classe Carro que herda a classe Veiculo e possui o atributo portas. Crie as propriedades getters e
-setters para o atributo. Crie também o construtor da classe. Sobrescreva o método de imprimir os dados do
-veículo de forma a apresentar também a quantidade de portas do carro.
+2 - Implemente uma classe chamada “ContaBancária” que possua atributos para armazenar o número da conta, nome do titular e saldo. Adicione métodos para realizar depósitos e saques.
 '''
 
-from atv_1 import Veiculo
-
-class Carro(Veiculo):
-
-    def __init__(self, marca: str, modelo: str, portas: int) -> None:
-        super().__init__(marca, modelo)
-        self.__portas = portas
-
-
+class ContaBancaria():
+    
+    def __init__(self, numero_conta: str, nome_titular: str, saldo: float) -> None:
+        self.__numero_conta = numero_conta
+        self.__nome_titular = nome_titular
+        self.__saldo = saldo
+    
     @property
-    def portas(self) -> int:
-        return self.__portas
-
-
-    @portas.setter
-    def portas(self, portas: int) -> None:
-        self.__portas = portas
+    def numero_conta(self) -> str:
+        return self.__numero_conta
     
-
-    def imprimir(self) -> None:
-        # super().imprimir()
-        print(f'Marca: {super().marca} Modelo: {super().modelo} Portas: {self.__portas}')
+    @property
+    def nome_titular(self) -> str:
+        return self.__nome_titular
     
+    @property
+    def saldo(self) -> float:
+        return self.__saldo
+
+    def __validar_retirada(self, valor: float) -> bool:
+        if valor <= self.saldo:
+            return True
+        return False
+
+    def sacar(self, valor: float) -> str:
+        if self.__validar_retirada(valor):
+            self.__saldo -= valor
+            return 'Valor sacado'
+        return 'Sem saldo suficiente para realziar o saque'
+    
+    def depositar(self, valor: float) -> str:
+        if valor > 0:
+            self.__saldo += valor
+            return 'Valor depositado'
+        return 'O valor precisa ser maior que zero'
+
 
 if __name__ == '__main__':
-    carro1: Carro = Carro('Fiat','Uno', 5)
-    carro1.imprimir()
+    usuario1: ContaBancaria = ContaBancaria('123', 'Aninha Fulana', 5)
+    print(f'{usuario1.numero_conta = }')
+    print(f'{usuario1.nome_titular = }')
+    print(f'{usuario1.saldo = :.2f}')
 
-    carro1.portas = 6
-    carro1.imprimir()
+    print(f'{usuario1.sacar(6)}')
+    print(f'{usuario1.sacar(5)}')
+    print(f'{usuario1.saldo = :.2f}')
+    print(f'{usuario1.sacar(5)}')
+    usuario1.depositar(11.50)
+    print(f'{usuario1.saldo = :.2f}')
+    usuario1.depositar(0)
 
-    carro2: Carro = Carro('Fiat','Argo', 5)
-    carro2.imprimir()
-    carro3: Carro = Carro('Chery','Tiggo 7', 6)
-    carro3.imprimir()
+

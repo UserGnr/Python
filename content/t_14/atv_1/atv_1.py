@@ -8,7 +8,7 @@ class Circulo():
 
 
     def __init__(self, raio: float) -> None:
-        self.__raio = raio
+        self.__raio: float = raio
     
 
     @property

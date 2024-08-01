@@ -5,9 +5,9 @@
 class ContaBancaria():
     
     def __init__(self, numero_conta: str, nome_titular: str, saldo: float) -> None:
-        self.__numero_conta = numero_conta
-        self.__nome_titular = nome_titular
-        self.__saldo = saldo
+        self.__numero_conta: str = numero_conta
+        self.__nome_titular: str = nome_titular
+        self.__saldo: float = saldo
     
     @property
     def numero_conta(self) -> str:

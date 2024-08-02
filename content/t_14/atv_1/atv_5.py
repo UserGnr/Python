@@ -71,11 +71,11 @@ class Funcionario:
     def salario_liquido(self) -> float:
         return self.__salario * (1 - self.__encargos.impostos / 100) + self.__encargos.beneficios   # Nesse caso, os benefícios não estão inclusos nos descontos
 
+if __name__ == '__main__':
+    encargos1 = Encargos(500, 50)
+    funcionario1 = Funcionario('Aninha', 1000, 'Analista', encargos1)
 
-encargos1 = Encargos(500, 50)
-funcionario1 = Funcionario('Aninha', 1000, 'Analista', encargos1)
-
-print(f'{funcionario1.nome = }')
-print(f'{funcionario1.salario = }')
-print(f'{funcionario1.cargo = }')
-print(f'{funcionario1.salario_liquido() = }')
+    print(f'{funcionario1.nome = }')
+    print(f'{funcionario1.salario = }')
+    print(f'{funcionario1.cargo = }')
+    print(f'{funcionario1.salario_liquido() = }')

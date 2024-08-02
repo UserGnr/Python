@@ -3,7 +3,7 @@
 um método para imprimir os dados de um veículo. Crie também o construtor da classe.
 '''
 
-class Veiculo():
+class Veiculo:
 
 
     def __init__(self, marca: str, modelo: str) -> None:

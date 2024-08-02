@@ -2,7 +2,7 @@
 1 - Crie uma classe chamada “Círculo” que possua um atributo para armazenar o raio e métodos para calcular a área e o perímetro do círculo.
 '''
 
-class Circulo():
+class Circulo:
 
     pi: float = 3.14159265359
 

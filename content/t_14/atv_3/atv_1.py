@@ -4,7 +4,7 @@
 from datetime import date
 
 
-class Pessoa():
+class Pessoa:
 
     def __init__(self, nome, data_nascimento, email) -> None:
         self.__nome: str = nome

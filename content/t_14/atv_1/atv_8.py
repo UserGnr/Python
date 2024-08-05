@@ -42,6 +42,8 @@ class Carro:
         ''' Define a velocidade do veículo'''
         if not isinstance(velocidade, (float, int)):
             raise ValueError('O valor informado para a velocidade deve ser um número (float)')
+        if velocidade < 0:
+            raise ValueError('A velocidade não pode sermenor que zero')
         self.__velocidade = velocidade
     
     def acelerar(self, aumentar_velocidade: float = 1):
@@ -56,13 +58,16 @@ class Carro:
         self.__velocidade += aumentar_velocidade
         return print(f'O carro está acelerando em +{aumentar_velocidade}')
         
-    def frear(self, reduzir_velocidade: float = __velocidade):
+    def frear(self, reduzir_velocidade: float = None):
         """
         Frear o veículo
 
         Parâmetro(s):
-        reduzir_velocidade: corresponde ao aumento da velocidade do veículo. Por padrão o valor é a velocidade atual do carro.
+        reduzir_velocidade: corresponde ao aumento da velocidade do veículo. Por padrão o valor é zero.
         """
+        if reduzir_velocidade is None:
+            reduzir_velocidade = self.__velocidade
+
         if reduzir_velocidade < 0:
             raise ValueError('A velocidade do carro não pode ser menor que zero')
         self.__velocidade -= reduzir_velocidade
@@ -97,5 +102,3 @@ if __name__ == '__main__':
     print(f'{carro1.velocidade = }')
     carro1.frear()
     print(f'{carro1.velocidade = }')
-
-

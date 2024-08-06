@@ -43,7 +43,7 @@ class Carro:
         if not isinstance(velocidade, (float, int)):
             raise ValueError('O valor informado para a velocidade deve ser um número (float)')
         if velocidade < 0:
-            raise ValueError('A velocidade não pode sermenor que zero')
+            raise ValueError('A velocidade não pode ser menor que zero')
         self.__velocidade = velocidade
     
     def acelerar(self, aumentar_velocidade: float = 1):
@@ -63,42 +63,50 @@ class Carro:
         Frear o veículo
 
         Parâmetro(s):
-        reduzir_velocidade: corresponde ao aumento da velocidade do veículo. Por padrão o valor é zero.
+        reduzir_velocidade: corresponde a redução da velocidade do veículo. Por padrão o valor é zero.
         """
         if reduzir_velocidade is None:
             reduzir_velocidade = self.__velocidade
 
         if reduzir_velocidade < 0:
             raise ValueError('A velocidade do carro não pode ser menor que zero')
+        
         self.__velocidade -= reduzir_velocidade
+
+        if self.__velocidade < 0:
+            self.__velocidade = 0
+        
         return print(f'O carro está freando em -{reduzir_velocidade}')
 
 
 if __name__ == '__main__':
-    carro1 = Carro('Fiat', 'Uno', 0)
-    print(f'{carro1.marca = }')
-    print(f'{carro1.modelo = }')
-    print(f'{carro1.velocidade = }')
+    try:
+        carro1 = Carro('Fiat', 'Uno', 0)
+        print(f'{carro1.marca = }')
+        print(f'{carro1.modelo = }')
+        print(f'{carro1.velocidade = }')
 
-    carro1.marca = 'Volkswagen'
-    carro1.modelo = 'Gol'
-    # carro1.velocidade = '1' # Retorna erro
-    carro1.velocidade = 1
-    print(f'{carro1.marca = }')
-    print(f'{carro1.modelo = }')
-    print(f'{carro1.velocidade = }')
+        carro1.marca = 'Volkswagen'
+        carro1.modelo = 'Gol'
+        # carro1.velocidade = '1' # Retorna erro
+        carro1.velocidade = 1
+        print(f'{carro1.marca = }')
+        print(f'{carro1.modelo = }')
+        print(f'{carro1.velocidade = }')
 
-
-    carro1.acelerar()
-    print(f'{carro1.velocidade = }')
-    carro1.acelerar()
-    print(f'{carro1.velocidade = }')
-    # carro1.acelerar(-50)    # Retorna erro
-    carro1.acelerar(50)    # Retorna erro
-    print(f'{carro1.velocidade = }')
-    carro1.acelerar()
-    print(f'{carro1.velocidade = }')
-    carro1.frear(5)
-    print(f'{carro1.velocidade = }')
-    carro1.frear()
-    print(f'{carro1.velocidade = }')
+        carro1.acelerar()
+        print(f'{carro1.velocidade = }')
+        carro1.acelerar()
+        print(f'{carro1.velocidade = }')
+        # carro1.acelerar(-50)    # Retorna erro
+        carro1.acelerar(50)    # Retorna erro
+        print(f'{carro1.velocidade = }')
+        carro1.acelerar()
+        print(f'{carro1.velocidade = }')
+        carro1.frear(5)
+        print(f'{carro1.velocidade = }')
+        carro1.frear()
+        print(f'{carro1.velocidade = }')
+        
+    except ValueError as erro:
+        print(f'Erro: {erro}')

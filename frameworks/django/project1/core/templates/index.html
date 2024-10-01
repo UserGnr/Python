@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,13 +7,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="{% static 'css//style.css' %}">
+
 </head>
 
 <body>
     <h1>Página INDEX</h1>
+
+    <img src="{% static 'images/django_img.png' %}" alt="Imagem Django">
+
     <h2>{{ texto }}</h2>
     <h2>{{ outro_texto }}</h2>
+    <span>{{ logado }}</span>
+    <span>{{ logado }}</span>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for produto in produtos %}
+            <tr>
+                <td><a href="{% url 'vw_produto' produto.id %}">{{ produto.nome }}</a></td>
+                <td>{{ produto.preco }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
 
+    </table>
+
+    <button onclick="teste();">Clique-me</button>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>

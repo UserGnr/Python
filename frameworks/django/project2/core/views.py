@@ -10,7 +10,7 @@ def index(request):
 
 
 def contato(request):
-    form = ContatoForm(request.POST or None)
+    form = ContatoForm(request.POST or None)    # O formulário form pode ser do tipo POST ou None (vazio)
 
     if str(request.method) == 'POST':
         if form.is_valid():

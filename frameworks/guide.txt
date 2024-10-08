@@ -1,3 +1,12 @@
 django
 
-1
+1 - Funcionalidades:
+    - Administrador: cadastro, manipulação e exibição
+    - Exibição de dados
+2 - Funcionalidades:
+    - Administrador: cadastro, manipulação e exibição
+    - Uso de imagens
+    - Tela de cadastro, se logado
+    - Exibição dos cadastros
+    - Valdiação de login
+    - Formulário

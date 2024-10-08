@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
+from django.shortcuts import redirect
 
 from .forms import ContatoForm, ProdutoModelForm
 from .models import Produto
@@ -40,25 +41,29 @@ def contato(request):
     return render(request, 'contato.html', context)
 
 def produto(request):
-    if str(request.method) == 'POST':
-        form = ProdutoModelForm(request.POST, request.FILES)
-        if form.is_valid():
-            # prod = form.save(commit=False)
 
-            # print(f'Nome: {prod.nome}')
-            # print(f'Preço: {prod.preco}')
-            # print(f'Estoque: {prod.estoque}')
-            # print(f'Imagem: {prod.imagem}')
+    if str(request.user) != 'AnonymousUser':    # Valida se o usuário está logado
+        if str(request.method) == 'POST':
+            form = ProdutoModelForm(request.POST, request.FILES)
+            if form.is_valid():
+                # prod = form.save(commit=False)
 
-            form.save()
+                # print(f'Nome: {prod.nome}')
+                # print(f'Preço: {prod.preco}')
+                # print(f'Estoque: {prod.estoque}')
+                # print(f'Imagem: {prod.imagem}')
 
-            messages.success(request, 'Produto salvo com sucesso')
-            form = ProdutoModelForm()
+                form.save()
+
+                messages.success(request, 'Produto salvo com sucesso')
+                form = ProdutoModelForm()
+            else:
+                messages.erro(request, 'Erro ao salvar o produto.')
         else:
-            messages.erro(request, 'Erro ao salvar o produto.')
+            form = ProdutoModelForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'produto.html', context)
     else:
-        form = ProdutoModelForm()
-    context = {
-        'form': form
-    }
-    return render(request, 'produto.html', context)
+            return redirect('index')    # Redireciona para a página index

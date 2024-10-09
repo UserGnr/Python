@@ -7,9 +7,12 @@ Este projeto tem como objetivo desenvolver uma aplicação web que faça:
 
 Banco de dados: SQLite
 Tabelas:
-- Produto (nome, descrição, preço)
+- Produto (nome, descrição, preço, imagem)
 - Fornecedor (CNPJ, nome, email, telefone)
 - Cliente (CNPJ, nome, email, telefone)
 
 Outras funcionalidades:
-- O produtos terão imagem
+- Os produtos terão imagem
+
+Outros:
+- Por enquanto, não será publicado

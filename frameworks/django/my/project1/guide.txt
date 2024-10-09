@@ -1,0 +1,15 @@
+Projeto 1
+Este projeto tem como objetivo desenvolver uma aplicação web que faça:
+- Adição
+- Edição
+- Visualização
+- Deleção
+
+Banco de dados: SQLite
+Tabelas:
+- Produto (nome, descrição, preço)
+- Fornecedor (CNPJ, nome, email, telefone)
+- Cliente (CNPJ, nome, email, telefone)
+
+Outras funcionalidades:
+- O produtos terão imagem

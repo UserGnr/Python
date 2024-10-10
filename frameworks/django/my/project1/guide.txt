@@ -16,3 +16,4 @@ Outras funcionalidades:
 
 Outros:
 - Por enquanto, não será publicado
+- Superuser: admin 1234

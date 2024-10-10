@@ -7,3 +7,11 @@ def index(request):
     }
 
     return render(request, 'index.html', context)
+
+
+def cadastrar(request):
+    context = {
+        'titulo': 'CADASTRO'
+    }
+
+    return render(request, 'cadastrar.html', context)

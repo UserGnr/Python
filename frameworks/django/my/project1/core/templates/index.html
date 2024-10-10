@@ -9,7 +9,15 @@
     <title>Home</title>
 </head>
 <h1>{{ titulo }}</h1>
-    
+    {% for produto in produtos %}
+        {{ produto.id }}
+        {{ produto.nome }}
+        {{ produto.preco }}
+        {{ produto.criado }}
+        {{ produto.modificado }}
+        {{ produto.ativo }}
+        <br>
+    {% endfor %}
 <body>
 
 </body>

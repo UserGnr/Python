@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Produto
+from .forms import ProdutoForm
+
 # Create your views here.
 def index(request):
     context = {
@@ -10,9 +12,18 @@ def index(request):
     return render(request, 'index.html', context)
 
 
-def cadastrar(request):
+def cadastrar_produto(request):
+
+    if request.method == 'POST':
+        form = ProdutoForm(request.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = ProdutoForm()
+
     context = {
         'titulo': 'CADASTRO',
+        'formulario': form,
     }
 
     return render(request, 'cadastrar.html', context)

@@ -1,13 +1,16 @@
+{% extends "base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar</title>
-</head>
-<body>
-    <h1>{{ titulo }}</h1>
-</body>
-</html>
+{% block title %}{{ titulo }}{% endblock title %}
+{% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
+
+{% block content %}
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ formulario.as_table }}
+        {% comment %} Existem outras formas alem do .as_p, como .as_table, que podem ser úteis {% endcomment %}
+        <button type="submit">Cadastrar</button>
+    </form>
+
+{% endblock content %}

@@ -1,14 +1,9 @@
+{% extends "base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<h1>{{ titulo }}</h1>
+{% block title %}{{ titulo }}{% endblock title %}
+{% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
+{% block content %}
     {% for produto in produtos %}
         {{ produto.id }}
         {{ produto.nome }}
@@ -18,8 +13,4 @@
         {{ produto.ativo }}
         <br>
     {% endfor %}
-<body>
-
-</body>
-
-</html>
+{% endblock content %}

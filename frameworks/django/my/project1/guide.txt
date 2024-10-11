@@ -17,3 +17,10 @@ Outras funcionalidades:
 Outros:
 - Por enquanto, não será publicado
 - Superuser: admin 1234
+
+Problemas:
+- Ao cadastrar um produto cria várias vezes se o botão for clicado sucessivamente
+
+Futuros desenvolvimento
+- Cadastrar um código único do produto definid pelo usuário
+- Melhorar o layout

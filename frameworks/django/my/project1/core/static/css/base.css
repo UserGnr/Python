@@ -2,17 +2,21 @@
     border: 0;
     padding: 0;
 }
+
 nav {
     background-color: black;
     border-radius: 5px;
 }
+
 nav ul {
     display: flex;
 }
+
 nav li {
     padding: 5px;
     list-style-type: none;
 }
+
 nav a {
     color: white;
     text-decoration: none;

@@ -1,3 +1,20 @@
+.tabela {
+    display: flex;
+    justify-content: center;
+}
+
 table {
-    background-color: black;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td {
+    text-align: center;
+}
+
+tr.borda-grossa {
+    border-bottom: 3px solid black;
+}
+tr.borda-fina {
+    border-bottom: 1px solid black;
 }

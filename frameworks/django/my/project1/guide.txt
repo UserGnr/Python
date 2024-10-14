@@ -24,3 +24,4 @@ Problemas:
 Futuros desenvolvimento
 - Cadastrar um código único do produto definid pelo usuário
 - Melhorar o layout
+- Ajustar o campo de data para data e hora no criado e modificado do produto

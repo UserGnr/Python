@@ -2,14 +2,40 @@
 {% load static %}
 
 {% block title %}{{ titulo }}{% endblock title %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/detalhe_produto.css'%}">
+{% endblock link %}
 
 {% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
 {% block content %}
-    {{ produto.id }}
-    {{ produto.nome }}
-    {{ produto.preco }}
-    {{ produto.criado }}
-    {{ produto.modificado }}
-    {{ produto.ativo }}
 
+<div class="tabela">
+    <table class="tabela-produto">
+        <tr>
+            <th>ID</th>
+            <td>{{ produto.id }}</td>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <td>{{ produto.nome }}</td>
+        </tr>
+        <tr>
+            <th>Preço</th>
+            <td>R$ {{ produto.preco|floatformat:2 }}</td>
+        </tr>
+        <tr>
+            <th>Data de Criação</th>
+            <td>{{ produto.criado|date:"d/m/Y" }}</td>
+        </tr>
+        <tr>
+            <th>Última Modificação</th>
+            <td>{{ produto.modificado|date:"d/m/Y" }}</td>
+        </tr>
+        <tr>
+            <th>Ativo</th>
+            <td>{{ produto.ativo|yesno:"Sim,Não" }}</td>
+        </tr>
+    </table>
+</div>
+    
 {% endblock content %}

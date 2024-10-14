@@ -3,21 +3,29 @@
     padding: 0;
 }
 
-nav {
+.head nav {
     background-color: black;
     border-radius: 5px;
 }
 
-nav ul {
+.head nav ul {
     display: flex;
 }
 
-nav li {
-    padding: 5px;
+.head nav li {
+    display: flex;
     list-style-type: none;
 }
 
-nav a {
-    color: white;
+.head a {
+    display: block;
+    padding: 12px 15px;
     text-decoration: none;
+}
+
+.head .active a {
+    background-color: gray; /* Cor de fundo para o item ativo */
+    color: white; /* Cor do texto do item ativo */
+    font-weight: bold; /* Texto em negrito */
+    /* border-radius: 5px; */
 }

@@ -9,20 +9,23 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block link %} {% endblock link %}
 </head>
+
 <body>
+<div class="head">
     <header>
         <h1>{% block cabecalho %}Cabeçalho{% endblock cabecalho %}</h1>
         <nav>
             <ul>
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'cadastrar' %}">Cadastro</a></li>
-                <li><a href="{% url 'admin:index' %}">Administração</a></li>
+                {% comment %} class="{% if request.path == 'index' %}active{% endif %}" será usado para validar se está na tela e irá deixar a nav com uma cor diferente quando selecionado {% endcomment %}
+                <li class="{% if request.resolver_match.url_name == 'index' %}active{% endif %}"><a href="{% url 'index' %}">Home</a></li>
+                <li class="{% if request.resolver_match.url_name == 'cadastrar' %}active{% endif %}"><a href="{% url 'cadastrar' %}">Cadastro</a></li>
+                <li  class="{% if request.resolver_match.url_name == 'admin:index' %}active{% endif %}"><a href="{% url 'admin:index' %}">Administração</a></li>
                 {% comment %} Outra solução para tornar o link absoluto e não relativo: {% endcomment %}
                 {% comment %} <li><a href="/admin/">Administração</a></li> {% endcomment %}
             </ul>
         </nav>
     </header>
-
+</div>
     <div class="content">
         {% block content %}
         <!-- Conteúdo que será sobrescrito -->

@@ -1,0 +1,29 @@
+.tabela {
+    display: flex;
+    justify-content: center;
+}
+
+.tabela-produto {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.tabela-produto th,
+.tabela-produto td {
+    width: 50%;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-produto th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+.tabela-produto td {
+    text-align: right;
+}
+
+.tabela-produto tr:last-child td {
+    border-bottom: none;
+}

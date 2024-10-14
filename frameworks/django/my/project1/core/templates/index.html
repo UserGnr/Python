@@ -16,6 +16,9 @@
             <th>CRIADO</th>
             <th>MODIFICADO</th>
             <th>ATIVO</th>
+            <th>VIZUALIZAR</th>
+            <th>EDITAR</th>
+
         </tr>
         {% for produto in produtos %}
             <tr>
@@ -25,6 +28,8 @@
                 <td>{{ produto.criado }}</td>
                 <td>{{ produto.modificado }}</td>
                 <td>{{ produto.ativo }}</td>
+                <td><a href="{% url 'det_produto' produto.id %}">👁️</a></td>
+                <td><a href="{% url 'edit_produto' produto.id %}">🖋️</a></td>
             </tr>
         {% endfor %}
 

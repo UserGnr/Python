@@ -5,10 +5,11 @@
 
 {% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
 {% block content %}
-    <form method='post'>
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type='submit'>Salvar</button>
-    </form>
+    {{ produto.id }}
+    {{ produto.nome }}
+    {{ produto.preco }}
+    {{ produto.criado }}
+    {{ produto.modificado }}
+    {{ produto.ativo }}
 
 {% endblock content %}

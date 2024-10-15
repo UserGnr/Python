@@ -1,10 +1,11 @@
 * {
     border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .head nav {
-    background-color: black;
+    background-color: gray;
     border-radius: 5px;
 }
 
@@ -15,17 +16,26 @@
 .head nav li {
     display: flex;
     list-style-type: none;
+    background-color: black;
+    border-radius: 5px;
+
 }
 
 .head a {
-    display: block;
     padding: 12px 15px;
     text-decoration: none;
 }
 
 .head .active a {
-    background-color: gray; /* Cor de fundo para o item ativo */
-    color: white; /* Cor do texto do item ativo */
+    background-color: white; /* Cor de fundo para o item ativo */
+    color: black; /* Cor do texto do item ativo */
     font-weight: bold; /* Texto em negrito */
     /* border-radius: 5px; */
+    border-bottom: 5px ridge black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.head nav a:hover {
+    background-color: gray;
+    color: black;
 }

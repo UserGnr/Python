@@ -4,26 +4,45 @@
     box-sizing: border-box;
 }
 
-.cabecalho nav {
+.cabecalho .navegacao {
     background-color: black;
     border-radius: 5px;
 }
 
-.cabecalho nav ul {
+.cabecalho .menu {
     display: flex;
 }
 
-.cabecalho nav li {
+.cabecalho .menu li {
     display: flex;
     list-style-type: none;
     border-radius: 5px;
+    position: relative;
 }
 
-.cabecalho a {
-    padding: 12px 15px;
+.cabecalho .menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    transition: background-color 0.3s;
     text-decoration: none;
     border-radius: 5px;
-    color: gray;
+}
+
+.cabecalho .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Faz o submenu aparecer abaixo do item pai */
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    z-index: 1;
+}
+
+.cabecalho .menu li:hover .submenu {
+    display: block;
 }
 
 .cabecalho .active a {
@@ -39,6 +58,7 @@
     background-color: gray;
     color: black;
 }
+
 
 .rodape {
     margin-top: 20px;

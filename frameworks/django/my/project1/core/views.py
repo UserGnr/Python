@@ -6,11 +6,17 @@ from .forms import ProdutoForm
 def index(request):
     context = {
         'titulo': 'INDEX',
-        'produtos': Produto.objects.all()
     }
 
     return render(request, 'index.html', context)
 
+def listar_produtos(request):
+    context = {
+        'titulo': 'Listagem de produtos',
+        'produtos': Produto.objects.all()
+    }
+
+    return render(request, 'listar_produtos.html', context)
 
 def cadastrar_produto(request):
 

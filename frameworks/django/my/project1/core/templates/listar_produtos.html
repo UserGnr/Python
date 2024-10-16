@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ titulo }}{% endblock title %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/listar_produtos.css'%}">
+{% endblock link %}
+
+{% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
+{% block content %}
+<div class="tabela">
+    {% comment %} <table>
+        <tr class="borda-grossa">
+            <th>ID</th>
+            <th>Produto</th>
+            <th>PREÇO</th>
+            <th>CRIADO</th>
+            <th>MODIFICADO</th>
+            <th>ATIVO</th>
+            <th>VIZUALIZAR</th>
+            <th>EDITAR</th>
+            
+        </tr>
+        {% for produto in produtos %}
+        <tr class="borda-fina">
+            <td>{{ produto.id }}</td>
+            <td>{{ produto.nome }}</td>
+            <td>{{ produto.preco }}</td>
+            <td>{{ produto.criado }}</td>
+            <td>{{ produto.modificado }}</td>
+                <td>{{ produto.ativo }}</td>
+                <td><a href="{% url 'det_produto' produto.id %}">👁️</a></td>
+                <td><a href="{% url 'edit_produto' produto.id %}">🖋️</a></td>
+            </tr>
+            {% endfor %}
+        </table> {% endcomment %}
+
+        <div class="galeria-container">
+            {% for produto in produtos %}
+                <div class='produto-card'>
+                    <img src="{{ produto.imagem.url }}" alt="{{ produto.nome }}" class="gal-produto-imagem">
+                    <p class="card id"> {{ produto.id }}</p>
+                    <h3 class="card nome">{{ produto.nome }}</h3>
+                    <p class="card preco">{{ produto.preco }}</p>
+                    <a href="{% url 'det_produto' produto.id %}">👁️</a>
+                    <a href="{% url 'edit_produto' produto.id %}">🖋️</a>
+
+                </div>
+
+            {% empty %}
+            <p>Sem produtos no momento.</p>
+            {% endfor%}
+        </div>
+</div>
+
+        {% endblock content %}
+        

@@ -12,6 +12,7 @@ class Base(models.Model):
 class Produto(Base):
     nome = models.CharField('Nome', max_length=255)
     preco = models.DecimalField('Preço', decimal_places=2, max_digits=9)
+    imagem = models.ImageField(upload_to='produtos/', default= 'produtos/imagem_padrao.png')
 
     def __str__(self):
         return self.nome

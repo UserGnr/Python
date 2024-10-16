@@ -6,7 +6,7 @@
 
 {% block content %}
 
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ formulario.as_table }}
         {% comment %} Existem outras formas alem do .as_p, como .as_table, que podem ser úteis {% endcomment %}

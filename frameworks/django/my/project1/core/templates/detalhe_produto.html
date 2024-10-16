@@ -35,6 +35,13 @@
             <th>Ativo</th>
             <td>{{ produto.ativo|yesno:"Sim,Não" }}</td>
         </tr>
+        <tr>
+            <th>Imagem</th>
+            <td>
+                <img src="{{ produto.imagem.url }}" alt="{{ produto.nome }}" class = "produto-imagem">
+            </td>
+        </tr>
+        
     </table>
 </div>
     

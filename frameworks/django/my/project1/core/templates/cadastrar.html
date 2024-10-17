@@ -3,14 +3,20 @@
 
 {% block title %}{{ titulo }}{% endblock title %}
 {% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/cadastrar.css'%}">
+{% endblock link %}
 
 {% block content %}
+
+<div class="form-cadastro">
 
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ formulario.as_table }}
-        {% comment %} Existem outras formas alem do .as_p, como .as_table, que podem ser úteis {% endcomment %}
+        {% comment %} Existem outras formas alem do .as_p, como .as_table, que podem ser úteis, ex de uso: {{ formulario.as_table }} {% endcomment %}
         <button type="submit">Cadastrar</button>
     </form>
-
+    
+</div>
 {% endblock content %}

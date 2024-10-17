@@ -1,0 +1,48 @@
+.form-cadastro {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form-cadastro form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 80%;
+    padding: 15px;
+}
+
+
+.form-cadastro table {
+    border-collapse: collapse;
+}
+
+
+.form-cadastro input{
+    text-align: left;
+    vertical-align: middle;
+    padding: 15px;
+    margin: 5px 0;
+    border: 2px solid rgb(128, 128, 128, 0.2);
+    border-radius: 5px;
+}
+
+
+.form-cadastro button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.form-cadastro button[type="submit"]:hover {
+    background-color: gray;
+}
+
+.form-cadastro input[type="text"], 
+.form-cadastro input[type="file"],
+.form-cadastro input[type="number"] {
+    width: 100%;
+}

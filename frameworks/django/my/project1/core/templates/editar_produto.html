@@ -2,13 +2,22 @@
 {% load static %}
 
 {% block title %}{{ titulo }}{% endblock title %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/editar_produto.css'%}">
+{% endblock link %}
 
 {% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
+
 {% block content %}
+
+<div class="form-cadastro">
+
     <form method='post'>
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form.as_table }}
         <button type='submit'>Salvar</button>
     </form>
+
+</div>
 
 {% endblock content %}

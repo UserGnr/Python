@@ -39,6 +39,11 @@
     margin: 0;
     background-color: #333;
     z-index: 1;
+    border: 5px;
+}
+
+.cabecalho .submenu a {
+    width: 100%;
 }
 
 .cabecalho .menu li:hover .submenu {

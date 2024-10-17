@@ -8,8 +8,12 @@
 
 {% block cabecalho %}{{ titulo }}{% endblock cabecalho %}
 {% block content %}
-<div class="tabela">
-    Página inicial
+<div class="conteudo">
+    <p>Acesse as páginas do site:</p>
+    <p>
+        <li class="{% if request.resolver_match.url_name == 'list_prod' %}active{% endif %}"><a href="{% url 'list_prod' %}">Listar</a></li>
+        <li class="{% if request.resolver_match.url_name == 'cadastrar' %}active{% endif %}"><a href="{% url 'cadastrar' %}">Cadastrar</a></li>
+    </p>
 </div>
 
         {% endblock content %}

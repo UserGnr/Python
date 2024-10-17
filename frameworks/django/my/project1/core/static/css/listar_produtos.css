@@ -20,19 +20,28 @@ tr.borda-fina {
 } */
 
 
-.tabela {
+.galeria {
     background-color: #f4f4f4;
     border-radius: 5px;
 }
 
-.galeria-container {
+.galeria .galeria-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
 }
 
-.produto-card {
+.galeria a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.galeria .card-link {
+    display: block;
+}
+
+.galeria .produto-card {
     background-color: white;
     color: black;
     border: 1px solid #ddd;
@@ -46,18 +55,18 @@ tr.borda-fina {
     overflow: hidden;
 }
 
-.produto-card:hover {
+.galeria .produto-card:hover {
     transform: scale(1.05);
 }
 
-.card {
+.galeria .card {
     max-width: 100%;
     margin: 5px;
 }
 
-
-.gal-produto-imagem {
+.galeria .gal-produto-imagem {
     max-width: 100%;
     height: auto;
     border: 5px;
 }
+

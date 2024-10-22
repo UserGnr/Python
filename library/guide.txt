@@ -1,0 +1,2 @@
+- openpyxl:
+    Biblioteca Python para ler/escrever arquivos xlsx/xlsm/xltx/xltm do Excel 2010+.

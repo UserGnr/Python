@@ -3,10 +3,24 @@ django
 1 - Funcionalidades:
     - Administrador: cadastro, manipulação e exibição
     - Exibição de dados
+    - SQLite
+    ...
 2 - Funcionalidades:
     - Administrador: cadastro, manipulação e exibição
     - Uso de imagens
     - Tela de cadastro, se logado
     - Exibição dos cadastros
     - Valdiação de login
+    - Envio de formulário por e-mail
     - Formulário
+    - MySQL
+    ...
+3 - 
+    - Administrador: cadastro, manipulação e exibição
+    - Uso do Class Based Views
+    - Uso de imagens
+    - PostgreSQL
+    - Envio de formulário por e-mail
+    - Relacionamento simples entre tabelas
+    - Uso de um layout profissional
+    ...
